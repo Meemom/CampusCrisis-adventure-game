@@ -1,0 +1,238 @@
+{
+  "locations" : [
+    {
+      "id_num" : 1,
+      "name" : "University College Dorm",
+      "brief_description" : "LOCATION: UNIVERSITY COLLEGE DORM\n\nYou’re in your cozy dorm at University College.\n\n You found a note from your roommate and realized that some water has spilled on it.",
+      "long_description" : "LOCATION: UNIVERSITY COLLEGE DORM\n\nYour dorm at University College—your home base in the heart of campus. \nThe walls hold memories of late-night cramming, last-minute assignments, and way too much procrastination. \nScattered around the room are remnants of student life—books, clothes, empty coffee cups. \nAs you scan the room, you may spot random objects lying around here and there. \nHmm, looks like one of them might be a note!\nLooking closer, you spot that some water has spilled on it.\nWhat could it say?",
+
+      "available_commands" : {
+        "go outside" : 2,
+        "look at desk" : 9,
+        "search cabinet" : 10
+      },
+      "items" : [],
+      "visited" : false,
+      "sub_locations" : [
+        9,
+        10
+      ]
+    },
+    {
+      "id_num" : 9,
+      "name" : "Dorm Desk",
+      "brief_description" : "",
+      "long_description" : "LOCATION: DORM DESK\n\nYour desk is scattered with books, papers, and a few other belongings. \nAmong the mess, an unattended phone rests silently, \nand a sticky note catches your attention—it definitely wasn’t there before.",
+      "available_commands" : {
+        "pickup note" : null,
+        "pickup phone" : null,
+        "go outside" : 2,
+        "return to dorm" : 1
+      },
+      "items" : [5, 6],
+      "visited" : false,
+      "sub_locations" : null
+    },
+    {
+      "id_num" : 10,
+      "name" : "Dorm Cabinet",
+      "brief_description" : "",
+      "long_description" : "LOCATION: DORM CABINET\n\nYour cabinet is slightly ajar, as if someone had rummaged through it. \nInside, a few everyday essentials are neatly stacked, but one item stands out—a crumpled Starbucks receipt, \nleft as if it had some significance.",
+      "available_commands" : {
+        "pickup starbucks receipt" : null,
+        "go outside" : 2,
+        "return to dorm" : 1
+      },
+      "items" : [7, 8],
+      "visited" : false,
+      "sub_locations" : null
+    },
+    {
+      "id_num" : 2,
+      "name" : "King’s College Circle",
+      "brief_description" : "LOCATION: KING’S COLLEGE CIRCLE\n\nYou step outside into King's College Circle, feeling the crisp air on your face.",
+      "long_description" : "LOCATION: KING’S COLLEGE CIRCLE\n\nYou step away from your studies and venture out to Front Campus, seeking a refreshing change of pace. \nTo the east lies Robarts Commons, a hub of academic life. \nHeading south, you can retreat to the cozy warmth of your dorm in University College. \nTo the west, the inviting gym at Hart House offers a chance to warm up and recharge.",
+      "available_commands" : {
+        "go east" : 3,
+        "go south" : 1,
+        "go north" : 7,
+        "go west" : 8
+      },
+      "items" : null,
+      "visited" : false,
+      "sub_locations" : null
+    },
+    {
+      "id_num" : 3,
+      "name" : "Robarts Commons",
+      "brief_description" : "LOCATION: ROBARTS COMMONS 1ST FLOOR\n\nYou are on the first floor of Robarts Commons. You have access to the first or second floor.",
+      "long_description" : "LOCATION: ROBARTS COMMONS 1ST FLOOR\n\nYou stand in the bustling lobby of Robarts Commons, the heart of student activity. \nSome students are heading up the stairs, searching for study spots, while others are heading out for a quick break. \nThe elevators hum to your right, and behind you, the exit door opens to the busy St. George Street. \nYou have plenty of options—time to decide where to head next.",
+      "available_commands" : {
+        "go outside" : 2,
+        "go to second floor" : null
+      },
+      "items" : null,
+      "visited" : false,
+      "sub_locations" : [
+        4
+      ]
+    },
+    {
+      "id_num" : 4,
+      "name" : "Robarts Commons (second floor)",
+      "brief_description" : "LOCATION: ROBARTS COMMONS 2ND FLOOR\n\nYou are on the second floor of Robarts Commons. \nA Starbucks cafe hums with activity beside you, while the common room beckons just a few steps away.",
+      "long_description" : "LOCATION: ROBARTS COMMONS 2ND FLOOR\n\nYou stand in the second floor buzzing with student life. \nTo your right, the familiar aroma of freshly brewed coffee fills the air, as a queue of students waits eagerly at Starbucks. \nA mix of people stand in line: some buried in textbooks, some glued to their phones and others holding a...mug?",
+      "available_commands" : {
+        "go to first floor" : 3,
+        "go to starbucks" : 5,
+        "go to common room" : 6
+      },
+      "items" : null,
+      "visited" : false,
+      "sub_locations" : [
+        5,
+        6
+      ]
+    },
+    {
+      "id_num" : 5,
+      "name" : "Starbucks",
+      "brief_description" : "LOCATION: STARBUCKS\n\nYou’ve made it to your go-to spot—Starbucks for a quick caffeine fix.",
+      "long_description" : "LOCATION: STARBUCKS\n\nThe rich aroma of freshly brewed coffee fills the air, making it the ideal stop for a quick pick-me-up. \nIt looks like Starbucks has rolled out a new eco-friendly policy: a 10% discount for bringing your own mug.",
+      "available_commands" : {
+        "talk to the barista" : null,
+        "go to common room" : 6,
+        "go to first floor" : 3
+      },
+      "items" : [2],
+      "visited" : false,
+      "sub_locations" : null
+    },
+    {
+      "id_num" : 6,
+      "name" : "Robarts Common Room",
+      "brief_description" : "LOCATION: ROBARTS COMMON ROOM\n\nA large, well-lit study area on the second floor of Robarts Library, with private study rooms lining the edges.\nA librarian sits at her desk, watching over the space.",
+      "long_description" : "LOCATION: ROBARTS COMMON ROOM\n\nYou step into the Robarts Common Room, a well-lit study space on the second floor of Robarts Library. \nRows of study tables stretch across the room, occupied by students buried in textbooks and typing away on laptops. \nSeveral glass-walled study rooms line the perimeter, offering a quieter space for group work.\n\nIn front of you, a librarian sits on her desk, watching over the space.",
+      "available_commands" : {
+        "go to first floor" : 3,
+        "go to starbucks" : 5,
+        "ask the librarian" : null
+      },
+      "items" : [3],
+      "visited" : false,
+      "sub_locations" : null
+    },
+    {
+      "id_num" : 8,
+      "name" : "Hart House Fitness Centre",
+      "brief_description" : "LOCATION: HART HOUSE FITNESS CENTRE\n\nYou’re at Hart House Fitness Centre, your go-to place for working off stress.",
+      "long_description" : "LOCATION: HART HOUSE FITNESS CENTRE\n\nYou’re standing in the Hart House Fitness Centre, surrounded by the sound of weights clanging and the hum of the treadmill. \nIt’s a familiar place—a spot where you’ve worked off both physical stress and mental blocks. \nYou remember leaving something behind here during a previous workout session. \nCould it be the missing item you’re searching for?",
+      "available_commands" : {
+        "find coach carter" : null,
+        "go outside" : 2
+      },
+      "items" : [1],
+      "visited" : false,
+      "sub_locations" : null
+    },
+    {
+      "id_num" : 7,
+      "name" : "Bahen Centre",
+      "brief_description" : "LOCATION: BAHEN CENTRE\n\nYou’re on the first floor of Bahen Centre, a hub for engineering and computer science students. \nHere, you have access to the CSSU lounge and a Lost and Found.",
+      "long_description" : "LOCATION: BAHEN CENTRE\n\nYou’re on the first floor of Bahen Centre for Information Technology, the site of endless study sessions and stimulating lectures for engineering and computer science students. \nAround you, you find students rushing to finish assignments or cram for tests. \nIn the corner of the room, you spot a “Lost and Found” door with a red sign. \nRight beside you, you spot a poster describing ‘All students are welcome to the CSSU lounge! Just right up the stairs!’",
+      "available_commands" : {
+        "go to cssu lounge" : 11,
+        "go to the lost and found" : 12,
+        "go outside" : 2
+      },
+      "items" : null,
+      "visited" : false,
+      "sub_locations" : [
+        11,
+        12
+      ]
+    },
+    {
+      "id_num" : 11,
+      "name" : "CSSU Lounge",
+      "brief_description" : "LOCATION: CSSU LOUNGE\n\nA quiet retreat for many CS students, offering a space to relax, collaborate, and recharge.",
+      "long_description" : "LOCATION: CSSU LOUNGE\n\nA welcoming space where Computer Science students can connect with peers.\nAround you, various objects catch your attention, and you spot a bunch of students sitting on a couch.",
+      "available_commands" : {
+        "eavesdrop on the students": null,
+        "check table light": null,
+        "go to the lost and found": 12
+      },
+      "items" : null,
+      "visited" : false,
+      "sub_locations" : null
+    },
+    {
+      "id_num" : 12,
+      "name" : "Lost and Found",
+      "brief_description" : "LOCATION: LOST AND FOUND\n\nYou return to the red door, the familiar sign now catching your eye again: 'BYFFI QILFX'",
+      "long_description" : "LOCATION: LOST AND FOUND\n\nYou approach the crimson-red door, your gaze drawn to the weathered sign hanging crookedly.\n\nThe dim light flickers as you step closer, revealing the cryptic message: 'BYFFI QILFX.'",
+      "available_commands" : {
+        "unlock door": null,
+        "go outside": 7,
+        "go to cssu lounge": 11
+      },
+      "items" : [4],
+      "visited" : false,
+      "sub_locations" : null
+    }
+  ],
+  "items": [
+    {
+      "name" : "note",
+      "id_num" : 5,
+      "description" : "Hey, sorry!! Had to grab your charger—total emergency, and you were dead asleep.\nI’m at Robarts, room 2XXXXX.\nCome find me when you're up! X - Roomie",
+      "start_position" : 9,
+      "target_position" : 6
+    },
+    {
+      "name" : "phone",
+      "id_num" : 6,
+      "description" : "Your phone buzzes with an unread message: \n‘Tsk Tsk Tsk, You left your T-Card again after the session. \nLooks like you owe me a run - Coach Carter’",
+      "start_position" : 9,
+      "target_position" : 8
+    },
+    {
+      "name" : "starbucks receipt",
+      "id_num" : 7,
+      "description" : "Order #7069\nThank you for your order!\nItem: Caramel Macchiato\nP.S. It’s Earth Week! Bring your own mug for a 10% discount.",
+      "start_position" : 10,
+      "target_position" : 5
+    },
+    {
+     "name" : "lucky mug",
+      "id_num" : 2,
+      "description" : "Your Lucky Mug, a target item!",
+      "start_position" : 5,
+      "target_position" : 1
+    },
+    {
+      "name" : "laptop charger",
+      "id_num" : 3,
+      "description" : "Your Laptop Charger, a target item!",
+      "start_position" : 6,
+      "target_position" : 1
+    },
+    {
+      "name" : "t-card",
+      "id_num" : 1,
+      "description" : "Your T-Card, a target item!",
+      "start_position" : 8,
+      "target_position" : 1
+    },
+    {
+      "name" : "usb drive",
+      "id_num" : 4,
+      "description" : "Your USB drive, a target item!",
+      "start_position" : 12,
+      "target_position" : 1
+    }
+  ]
+}
+
+
+
